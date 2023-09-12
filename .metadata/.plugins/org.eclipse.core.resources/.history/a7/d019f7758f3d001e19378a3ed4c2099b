@@ -1,0 +1,24 @@
+package com.ptpl.dowhileloops;
+
+import java.util.Scanner;
+
+public class PasswordChecker {
+
+	public static void main(String[] args) {
+
+
+		Scanner sc=new Scanner(System.in);
+		String p1="Pranav";
+		
+		do {
+			System.out.println("Enter Password : ");
+			String pass=sc.next();
+			if(pass==p1) {
+				System.out.println("Access Granted");
+			}else {
+				System.out.println("Access Denied! Please try again !");}
+		}while(true);
+//		sc.close();
+	}
+
+}

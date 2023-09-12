@@ -1,0 +1,37 @@
+package student;
+
+import java.util.Scanner;
+
+public class Student {
+	Scanner sc=new Scanner(System.in);
+	 int roll;
+	 String name;
+	
+	 Student (int roll,String name){
+		this.roll=roll=sc.nextInt();
+		this.name=name=sc.next();
+	
+	}
+	
+//
+//	public void setRoll(int roll) {
+//		this.roll = roll;
+//	}
+//	public int getRoll() {
+//		return roll;
+//	}
+//
+//	public void setName(String name) {
+//		this.name = name;
+//	}
+//	public String getName() {
+//		return name;
+//	}
+	public void display() {
+		System.out.println("Roll no : "+this.roll);
+		System.out.println("Name : "+this.name);
+	}
+//	int i=0;
+	
+
+}

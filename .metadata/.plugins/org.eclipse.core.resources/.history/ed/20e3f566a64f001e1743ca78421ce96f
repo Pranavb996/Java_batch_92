@@ -1,0 +1,10 @@
+package library;
+
+public class BookDisplay extends Book {
+
+	
+	BookDisplay(){
+	
+		System.out.println("");
+	}
+}

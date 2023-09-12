@@ -1,0 +1,48 @@
+package student;
+
+import java.util.Scanner;
+
+public class Main {
+	
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		Student s[] = new Student[5];
+		
+		int ch = 0;
+		int i = 0;
+		int i1;
+		do {
+			System.out.println("Enter your choice: ");
+			ch = sc.nextInt();
+			switch (ch) {
+			case 1:
+				System.out.println("Enter roll number : ");
+				int roll=sc.nextInt();
+				System.out.println("Enter name : ");
+				String name=sc.next();
+				s[i] = new Student(roll,name);
+				i++;
+
+				break;
+
+			case 2:
+				for (i1 = 0; i1 < s.length; i1++) {
+					try{
+						
+						s[i1].display(s);
+					}
+					catch(NullPointerException e) {
+						break;
+					}
+				}
+				
+					break;
+
+			}
+		} while (ch != 5);
+		
+	}
+
+}

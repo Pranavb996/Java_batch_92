@@ -1,0 +1,39 @@
+package student;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		Student s [] = new Student[5];
+		Student st=new Student();
+		int ch=0;
+		int i=0;
+		do
+		{
+			System.out.println("Enter your choice: ");
+			ch=sc.nextInt();
+		switch(ch)
+		{
+		case 1:
+			i++;
+			
+			s[i]=new Student(st.getRoll(),st.getName());
+			
+			break;
+			
+		case 2:
+			for(int i=0; i<s.length; i++) {
+			s[i].display();
+			i++;
+			
+			
+			}
+			break;
+			
+		}
+		}while(ch!=5);
+	}
+
+}

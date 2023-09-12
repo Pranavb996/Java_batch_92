@@ -1,0 +1,12 @@
+package student;
+
+public class Student {
+	int[] rollno=new int[100];
+	String name;
+	int dob;
+	String gender;
+	long mobile_no;
+	double percent;
+	static String clg="KIT";
+	int i ;
+}

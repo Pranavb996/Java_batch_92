@@ -1,0 +1,48 @@
+package library;
+
+public class Book {
+	
+	private String name;
+	private  int bookid=0;
+	private String author;
+	
+//	public  int increment_bookid() {
+//		bookid++;
+//		return bookid;
+//	}
+	
+	public Book(String name, String author, int bookid) {
+		super();
+		this.bookid=bookid;
+		this.name = name;
+		this.author = author;
+//		this.bookid=bookid;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public static int getBookid() {
+		return bookid;
+	}
+	public static void setBookid(int bookid) {
+		Book.bookid = bookid;
+	}
+	public String getAuthor() {
+		return author;
+	}
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+	
+	
+	public void Display() {
+		System.out.println("Book Id : "+ bookid);
+		System.out.println("Book Name : "+this.name);
+		System.out.println("Book Author : "+ this.author);
+		
+	}
+
+}
